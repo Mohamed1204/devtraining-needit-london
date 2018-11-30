@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="test" max_length="255" name="test" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="leg" label="Requested type" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Rescoures" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="leg"/>
+                <element inactive_on_update="false" label="zbale" sequence="3" value="zbl"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human recasd1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Human recasd2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="facilities1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="facilities2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="legal1" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="legal2" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="zbale1" sequence="6" value="zbale1"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested For" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+    </element>
+</database>
